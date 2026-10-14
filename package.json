@@ -1,0 +1,13 @@
+{
+  "name": "medivoice-ai-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "cmd /c \"cd server && npm install && cd ../client && npm install\"",
+    "client": "cmd /c \"cd client && npm run dev\"",
+    "server": "cmd /c \"cd server && npm run dev\"",
+    "test:server": "cmd /c \"cd server && npm test\"",
+    "test:client": "cmd /c \"cd client && npm test\"",
+    "test": "cmd /c \"cd server && npm test && cd ../client && npm test\""
+  }
+}
